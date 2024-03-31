@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="sports_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+    <div class="login-container">
+      <img src="sports_logo.jpeg" alt="Logo" class="logo">
+      <h2>SCOREKEEPER</h2>
+        <h3>User Login</h3>
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div class="social-icons">
+            <p>Or login with:</p>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        <p id="error-message"></p>
+      </div>
+    
+      <script src="login.js"></script>
+</body>
+</html>
