@@ -1,20 +1,5 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  var username = document.getElementById('username').value;
-  var password = document.getElementById('password').value;
-  
-  // Here you can perform validation or send data to a server for authentication
-  
-  if (username === 'abhijit' && password === 'abhijit453') {
-    // If authentication is successful, redirect or show success message
-    alert('HELLO MR. ABHIJIT');
-  } else {
-    // If authentication fails, show error message
-    document.getElementById('error-message').innerText = 'Invalid username or password';
-  }
-});
 // Assuming you have installed necessary packages like express and mysql
-/*const express = require('express');
+const express = require('express');
 const mysql = require('mysql');
 
 const app = express();
@@ -55,4 +40,4 @@ app.post('/login', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-});*/
+});
